@@ -5,9 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-require '../helpers.php';
 
-$titulo = "Prixmasol.info";
-$mensaje = "Estamos probando esto";
-
-view("home",  compact('titulo','mensaje'));
+function view($template, $vars = array()){
+    extract($vars);
+    require "views/$template.tpl.php";
+}
