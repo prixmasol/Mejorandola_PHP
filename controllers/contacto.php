@@ -6,6 +6,6 @@
  * and open the template in the editor.
  */
 
-require '../helpers.php';
+
 
 view("contacto");
